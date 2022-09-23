@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TabBarController {
+final class TabBarController: UITabBarController {
     
 }
 
