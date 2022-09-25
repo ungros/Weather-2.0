@@ -7,6 +7,12 @@
 
 import UIKit
 
+enum Tabs: Int, CaseIterable {
+    case hone
+    case search
+    case world
+}
+
 final class TabBarController: UITabBarController {
     
 }
