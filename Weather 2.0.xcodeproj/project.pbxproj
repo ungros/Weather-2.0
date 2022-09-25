@@ -14,6 +14,7 @@
 		307FA47F289FC376006A4615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307FA47D289FC376006A4615 /* LaunchScreen.storyboard */; };
 		307FA48C28A0F005006A4615 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307FA48B28A0F005006A4615 /* Resources.swift */; };
 		307FA48E28A0F68D006A4615 /* UIColor Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307FA48D28A0F68D006A4615 /* UIColor Ext.swift */; };
+		309E9B9C28E0D72B003AB97B /* DefaultWC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E9B9B28E0D72B003AB97B /* DefaultWC.swift */; };
 		30E800B128DA47F100E7343E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E800B028DA47F100E7343E /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		307FA480289FC376006A4615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		307FA48B28A0F005006A4615 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		307FA48D28A0F68D006A4615 /* UIColor Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor Ext.swift"; sourceTree = "<group>"; };
+		309E9B9B28E0D72B003AB97B /* DefaultWC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWC.swift; sourceTree = "<group>"; };
 		30E800B028DA47F100E7343E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 		307FA48928A0E8DA006A4615 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				309E9B9A28E0D715003AB97B /* DefaultWC */,
 				307FA476289FC374006A4615 /* ViewController.swift */,
 				30E800B028DA47F100E7343E /* TabBarController.swift */,
 			);
@@ -111,6 +114,14 @@
 				307FA474289FC374006A4615 /* SceneDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		309E9B9A28E0D715003AB97B /* DefaultWC */ = {
+			isa = PBXGroup;
+			children = (
+				309E9B9B28E0D72B003AB97B /* DefaultWC.swift */,
+			);
+			path = DefaultWC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +197,7 @@
 				307FA477289FC374006A4615 /* ViewController.swift in Sources */,
 				307FA48C28A0F005006A4615 /* Resources.swift in Sources */,
 				307FA473289FC374006A4615 /* AppDelegate.swift in Sources */,
+				309E9B9C28E0D72B003AB97B /* DefaultWC.swift in Sources */,
 				30E800B128DA47F100E7343E /* TabBarController.swift in Sources */,
 				307FA48E28A0F68D006A4615 /* UIColor Ext.swift in Sources */,
 				307FA475289FC374006A4615 /* SceneDelegate.swift in Sources */,
