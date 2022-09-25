@@ -10,7 +10,7 @@ import UIKit
 enum R {
     
     enum Colors {
-        
+        static let background = UIColor(hexString: "#929DA5")
     }
     enum Strings {
         
@@ -18,6 +18,7 @@ enum R {
     
     enum Images {
         enum TabBar {
+            static let 
             
         }
     }
