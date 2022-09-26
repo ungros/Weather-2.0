@@ -15,5 +15,15 @@ enum Tabs: Int, CaseIterable {
 
 final class TabBarController: UITabBarController {
     
+   private func 
+    
+    
+    private func generateViewController(viewController: UIViewController, title: String, image: UIImage?) -> UIViewController {
+        viewController.tabBarItem.title = title
+        viewController.tabBarItem.image = image
+        return viewController
+    }
+    
+    
 }
 
