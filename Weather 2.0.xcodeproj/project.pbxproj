@@ -15,6 +15,9 @@
 		307FA48C28A0F005006A4615 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307FA48B28A0F005006A4615 /* Resources.swift */; };
 		307FA48E28A0F68D006A4615 /* UIColor Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307FA48D28A0F68D006A4615 /* UIColor Ext.swift */; };
 		309E9B9C28E0D72B003AB97B /* DefaultWC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E9B9B28E0D72B003AB97B /* DefaultWC.swift */; };
+		309E9BA028E38018003AB97B /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E9B9F28E38018003AB97B /* SearchVC.swift */; };
+		309E9BA228E38056003AB97B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E9BA128E38056003AB97B /* HomeVC.swift */; };
+		309E9BA528E38458003AB97B /* WorldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E9BA428E38458003AB97B /* WorldVC.swift */; };
 		30E800B128DA47F100E7343E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E800B028DA47F100E7343E /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		307FA48B28A0F005006A4615 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		307FA48D28A0F68D006A4615 /* UIColor Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor Ext.swift"; sourceTree = "<group>"; };
 		309E9B9B28E0D72B003AB97B /* DefaultWC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWC.swift; sourceTree = "<group>"; };
+		309E9B9F28E38018003AB97B /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		309E9BA128E38056003AB97B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		309E9BA428E38458003AB97B /* WorldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldVC.swift; sourceTree = "<group>"; };
 		30E800B028DA47F100E7343E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,7 +103,10 @@
 		307FA48928A0E8DA006A4615 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				309E9B9A28E0D715003AB97B /* DefaultWC */,
+				309E9B9D28E236E3003AB97B /* HomeVC */,
+				309E9B9E28E236ED003AB97B /* SearchVC */,
+				309E9BA328E3842F003AB97B /* WorldVC */,
+				309E9B9A28E0D715003AB97B /* DefaultVC */,
 				307FA476289FC374006A4615 /* ViewController.swift */,
 				30E800B028DA47F100E7343E /* TabBarController.swift */,
 			);
@@ -116,12 +125,36 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		309E9B9A28E0D715003AB97B /* DefaultWC */ = {
+		309E9B9A28E0D715003AB97B /* DefaultVC */ = {
 			isa = PBXGroup;
 			children = (
 				309E9B9B28E0D72B003AB97B /* DefaultWC.swift */,
 			);
-			path = DefaultWC;
+			path = DefaultVC;
+			sourceTree = "<group>";
+		};
+		309E9B9D28E236E3003AB97B /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				309E9BA128E38056003AB97B /* HomeVC.swift */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		309E9B9E28E236ED003AB97B /* SearchVC */ = {
+			isa = PBXGroup;
+			children = (
+				309E9B9F28E38018003AB97B /* SearchVC.swift */,
+			);
+			path = SearchVC;
+			sourceTree = "<group>";
+		};
+		309E9BA328E3842F003AB97B /* WorldVC */ = {
+			isa = PBXGroup;
+			children = (
+				309E9BA428E38458003AB97B /* WorldVC.swift */,
+			);
+			path = WorldVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,11 +227,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309E9BA028E38018003AB97B /* SearchVC.swift in Sources */,
 				307FA477289FC374006A4615 /* ViewController.swift in Sources */,
 				307FA48C28A0F005006A4615 /* Resources.swift in Sources */,
+				309E9BA228E38056003AB97B /* HomeVC.swift in Sources */,
 				307FA473289FC374006A4615 /* AppDelegate.swift in Sources */,
 				309E9B9C28E0D72B003AB97B /* DefaultWC.swift in Sources */,
 				30E800B128DA47F100E7343E /* TabBarController.swift in Sources */,
+				309E9BA528E38458003AB97B /* WorldVC.swift in Sources */,
 				307FA48E28A0F68D006A4615 /* UIColor Ext.swift in Sources */,
 				307FA475289FC374006A4615 /* SceneDelegate.swift in Sources */,
 			);
