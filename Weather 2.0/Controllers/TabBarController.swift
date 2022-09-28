@@ -15,10 +15,17 @@ enum Tabs: Int, CaseIterable {
 
 final class TabBarController: UITabBarController {
     
-   private func 
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    private func setTabBar(){
+        viewControllers = [setViewController(viewController: SearchVC, title: , image: <#T##UIImage?#>)]
+    }
     
     
-    private func generateViewController(viewController: UIViewController, title: String, image: UIImage?) -> UIViewController {
+    private func setViewController(viewController: UIViewController, title: String, image: UIImage?) -> UIViewController {
         viewController.tabBarItem.title = title
         viewController.tabBarItem.image = image
         return viewController
