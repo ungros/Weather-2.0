@@ -16,13 +16,18 @@ enum Tabs: Int, CaseIterable {
 final class TabBarController: UITabBarController {
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setTabBar()
+        setupTabBar()
     }
     
     private func setTabBar(){
-        viewControllers = [setViewController(viewController: HomeVC(), title: R.Strings.TabBar.home , image: R.Images.TabBar.home),
+        viewControllers = [
                            setViewController(viewController: SearchVC(), title: R.Strings.TabBar.search, image: R.Images.TabBar.search),
+                           setViewController(viewController: HomeVC(), title: R.Strings.TabBar.home , image: R.Images.TabBar.home),
                            setViewController(viewController: WorldVC(), title: R.Strings.TabBar.world, image: R.Images.TabBar.world)]
     }
     
@@ -31,6 +36,10 @@ final class TabBarController: UITabBarController {
         viewController.tabBarItem.title = title
         viewController.tabBarItem.image = image
         return viewController
+    }
+    
+    private func setupTabBar() {
+        tabBar.backgroundColor = R.Colors.background
     }
     
     

@@ -10,6 +10,7 @@ import UIKit
 enum R {
     
     enum Colors {
+        static let tabBarBackground =  #colorLiteral(red: 0.5594760149, green: 0.4969937842, blue: 0.645982788, alpha: 0.7031958082)
         static let background = UIColor(hexString: "#929DA5")
     }
     enum Strings {
@@ -18,6 +19,7 @@ enum R {
             static let search = "Search"
             static let world = "World"
         }
+        
     }
     
     enum Images {
