@@ -21,7 +21,9 @@ final class TabBarController: UITabBarController {
     }
     
     private func setTabBar(){
-        viewControllers = [setViewController(viewController: SearchVC, title: , image: <#T##UIImage?#>)]
+        viewControllers = [setViewController(viewController: HomeVC(), title: R.Strings.TabBar.home , image: R.Images.TabBar.home),
+                           setViewController(viewController: SearchVC(), title: R.Strings.TabBar.search, image: R.Images.TabBar.search),
+                           setViewController(viewController: WorldVC(), title: R.Strings.TabBar.world, image: R.Images.TabBar.world)]
     }
     
     
