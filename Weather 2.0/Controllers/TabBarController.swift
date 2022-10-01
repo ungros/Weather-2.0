@@ -39,12 +39,15 @@ final class TabBarController: UITabBarController {
     }
     
     private func setupTabBar() {
+        selectedIndex = 1 //chose 1st TbSection
+        
+        tabBar.layer.borderColor = R.Colors.separator.cgColor
+        tabBar.layer.borderWidth = 1
+        tabBar.layer.masksToBounds = true
+        
         tabBar.backgroundColor = R.Colors.background
-        selectedIndex = 1 //chose TbSection
-        
-        
         tabBar.tintColor = .white
-     // tabBar.barTintColor = .green
+        //tabBar.barTintColor = R.Colors.tbItem
         
     }
     
