@@ -45,7 +45,7 @@ final class TabBarController: UITabBarController {
         tabBar.layer.borderWidth = 1
         tabBar.layer.masksToBounds = true
         
-        tabBar.backgroundColor = R.Colors.background
+        tabBar.backgroundColor = R.Colors.navigators
         tabBar.tintColor = .white
         //tabBar.barTintColor = R.Colors.tbItem
         

@@ -10,8 +10,9 @@ import UIKit
 enum R {
     
     enum Colors {
+        static let mainBackground = UIColor(hexString: "#020B11")
         static let tabBarBackground =  #colorLiteral(red: 0.5594760149, green: 0.4969937842, blue: 0.645982788, alpha: 0.6508095733)
-        static let background = UIColor(hexString: "#929DA5")
+        static let navigators = UIColor(hexString: "#929DA5")
         //static let tbItem = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         static let separator = UIColor(hexString: "#E8ECEF")
     }

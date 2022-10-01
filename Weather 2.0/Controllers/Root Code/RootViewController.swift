@@ -11,12 +11,16 @@ class RootViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configureAppearence()
     }
 }
 
     @objc extension RootViewController {
         func setupViews() {}
         func constraintViews() {}
-        func configureAppearence() {}
+        func configureAppearence() {
+            view.backgroundColor = R.Colors.mainBackground.withAlphaComponent(0.2)
+        }
     }
 
