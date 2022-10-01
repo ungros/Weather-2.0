@@ -19,7 +19,7 @@ extension DefaultWC {
     func setupView() {}
     func constraintView() {}
     func configureAppearance() {
-        view.backgroundColor = .red
+        
     }
         
 }
