@@ -11,7 +11,12 @@ final class NavBarController: UINavigationController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configureNavBar()
     }
     
-    
+    private func configureNavBar() {
+        view.backgroundColor = .red
+        navigationBar.isTranslucent = false // ?
+    }
 }

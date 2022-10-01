@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WorldVC: UIViewController {
+class WorldVC: RootViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

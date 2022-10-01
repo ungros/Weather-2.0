@@ -7,11 +7,13 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class HomeVC: RootViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .white
     }
+    
+    
 }
