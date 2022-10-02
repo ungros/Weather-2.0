@@ -49,8 +49,11 @@ final class TabBarController: UITabBarController {
         tabBar.tintColor = .white
         //tabBar.barTintColor = R.Colors.tbItem
         
+        tabBar.addTopBorder(with: .green, height: 0.001)
     }
     
     
-}
+        }
+
+
 

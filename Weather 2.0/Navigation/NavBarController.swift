@@ -18,5 +18,8 @@ final class NavBarController: UINavigationController {
     private func configureNavBar() {
         view.backgroundColor = R.Colors.navigators
         navigationBar.isTranslucent = false // ?
+     
+        navigationBar.addTopBorder(with: .red, height: 1)
+        }
     }
-}
+

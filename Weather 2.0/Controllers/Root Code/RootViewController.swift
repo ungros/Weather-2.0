@@ -20,7 +20,7 @@ class RootViewController: UIViewController {
         func setupViews() {}
         func constraintViews() {}
         func configureAppearence() {
-            view.backgroundColor = R.Colors.mainBackground.withAlphaComponent(0.2)
+            view.backgroundColor = R.Colors.mainBackground.withAlphaComponent(0.7)
         }
     }
 
