@@ -26,9 +26,9 @@ final class TabBarController: UITabBarController {
     
     private func setTabBar(){
         viewControllers = [
-                           setViewController(viewController: SearchVC(), title: R.Strings.TabBar.search, image: R.Images.TabBar.search),
+                           setViewController(viewController: WorldVC(), title: R.Strings.TabBar.world, image: R.Images.TabBar.world),
                            setViewController(viewController: HomeVC(), title: R.Strings.TabBar.home , image: R.Images.TabBar.home),
-                           setViewController(viewController: WorldVC(), title: R.Strings.TabBar.world, image: R.Images.TabBar.world)]
+                           setViewController(viewController: SearchVC(), title: R.Strings.TabBar.search, image: R.Images.TabBar.search)]
     }
     
     
@@ -46,14 +46,13 @@ final class TabBarController: UITabBarController {
         tabBar.layer.masksToBounds = true
         
         tabBar.backgroundColor = R.Colors.navigators
-        tabBar.tintColor = .white
+        tabBar.tintColor = R.Colors.colorAccent
         //tabBar.barTintColor = R.Colors.tbItem
         
-        tabBar.addTopBorder(with: .green, height: 0.001)
-    }
-    
-    
-        }
+        
+        
+    } 
+}
 
 
 
