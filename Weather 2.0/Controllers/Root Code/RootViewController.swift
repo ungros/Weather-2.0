@@ -13,6 +13,7 @@ class RootViewController: UIViewController {
         super.viewDidLoad()
         
         configureAppearence()
+    
     }
 }
 

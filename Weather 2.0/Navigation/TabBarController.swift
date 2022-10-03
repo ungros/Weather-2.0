@@ -7,11 +7,11 @@
 
 import UIKit
 
-enum Tabs: Int, CaseIterable {
-    case hone
-    case search
-    case world
-}
+//enum Tabs: Int, CaseIterable {
+//    case hone
+//    case search
+//    case world
+//}
 
 final class TabBarController: UITabBarController {
     
@@ -22,6 +22,7 @@ final class TabBarController: UITabBarController {
         
         setTabBar()
         setupTabBar()
+    
     }
     
     private func setTabBar(){
