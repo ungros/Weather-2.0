@@ -12,7 +12,7 @@ class NavBarController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setNavBars()
+        //setNavBars()
         configureNavBar()
         
     }
@@ -26,16 +26,21 @@ class NavBarController: UINavigationController {
         navigationBar.addBottomBorder(with: .red, height: 1)
  }
     
-    func setNavBars() {
-    viewControllers = [setViewController(viewController: HomeVC(), title: "hi"),
-                       setViewController(viewController: WorldVC(), title: "world")]
-        
-    }
-        
-    func setViewController(viewController: UIViewController, title: String) -> UIViewController {
+    //let navVC = NavBarController(rootViewController: WorldVC())
     
-       // viewController.navigationItem.title = title
-        viewController.navigationController?.title = title
-        return(viewController)
-    }
+    
+    
+    
+//    func setNavBars() {
+//    viewControllers = [setViewController(viewController: HomeVC(), title: "hi"),
+//                       setViewController(viewController: WorldVC(), title: "world")]
+//
+//    }
+//
+//    func setViewController(viewController: UIViewController, title: String) -> UIViewController {
+//
+//       // viewController.navigationItem.title = title
+//        viewController.navigationController?.title = title
+//        return(viewController)
+//    }
 }

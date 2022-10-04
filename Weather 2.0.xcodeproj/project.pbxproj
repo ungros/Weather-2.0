@@ -20,6 +20,7 @@
 		309E9BAA28E86448003AB97B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E9BA928E86448003AB97B /* RootViewController.swift */; };
 		309E9BAC28E9FD5C003AB97B /* BorderView Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E9BAB28E9FD5C003AB97B /* BorderView Ext.swift */; };
 		309E9BAE28EA37CB003AB97B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E9BAD28EA37CB003AB97B /* RootView.swift */; };
+		309E9BB128EC334D003AB97B /* WeatherKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E9BB028EC334D003AB97B /* WeatherKit.swift */; };
 		30E800B128DA47F100E7343E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E800B028DA47F100E7343E /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		309E9BA928E86448003AB97B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		309E9BAB28E9FD5C003AB97B /* BorderView Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BorderView Ext.swift"; sourceTree = "<group>"; };
 		309E9BAD28EA37CB003AB97B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		309E9BB028EC334D003AB97B /* WeatherKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherKit.swift; sourceTree = "<group>"; };
 		30E800B028DA47F100E7343E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +74,7 @@
 		307FA471289FC374006A4615 /* Weather 2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				309E9BAF28EC3330003AB97B /* Weather */,
 				307FA48928A0E8DA006A4615 /* Controllers */,
 				309E9BA828E834CE003AB97B /* Navigation */,
 				307FA48628A0E87B006A4615 /* Tools */,
@@ -155,6 +158,14 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		309E9BAF28EC3330003AB97B /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				309E9BB028EC334D003AB97B /* WeatherKit.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,6 +240,7 @@
 				307FA48C28A0F005006A4615 /* Resources.swift in Sources */,
 				309E9BA228E38056003AB97B /* HomeVC.swift in Sources */,
 				309E9BAC28E9FD5C003AB97B /* BorderView Ext.swift in Sources */,
+				309E9BB128EC334D003AB97B /* WeatherKit.swift in Sources */,
 				309E9BAA28E86448003AB97B /* RootViewController.swift in Sources */,
 				309E9BA728E834BB003AB97B /* NavBarController.swift in Sources */,
 				307FA473289FC374006A4615 /* AppDelegate.swift in Sources */,
