@@ -21,6 +21,7 @@
 		309E9BAC28E9FD5C003AB97B /* BorderView Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E9BAB28E9FD5C003AB97B /* BorderView Ext.swift */; };
 		309E9BAE28EA37CB003AB97B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E9BAD28EA37CB003AB97B /* RootView.swift */; };
 		309E9BB128EC334D003AB97B /* WeatherKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E9BB028EC334D003AB97B /* WeatherKit.swift */; };
+		309E9BB328F01B63003AB97B /* UIView Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E9BB228F01B63003AB97B /* UIView Ext.swift */; };
 		30E800B128DA47F100E7343E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E800B028DA47F100E7343E /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		309E9BAB28E9FD5C003AB97B /* BorderView Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BorderView Ext.swift"; sourceTree = "<group>"; };
 		309E9BAD28EA37CB003AB97B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		309E9BB028EC334D003AB97B /* WeatherKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherKit.swift; sourceTree = "<group>"; };
+		309E9BB228F01B63003AB97B /* UIView Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView Ext.swift"; sourceTree = "<group>"; };
 		30E800B028DA47F100E7343E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 			children = (
 				307FA48B28A0F005006A4615 /* Resources.swift */,
 				307FA48D28A0F68D006A4615 /* UIColor Ext.swift */,
+				309E9BB228F01B63003AB97B /* UIView Ext.swift */,
 				309E9BAB28E9FD5C003AB97B /* BorderView Ext.swift */,
 			);
 			path = Tools;
@@ -245,6 +248,7 @@
 				309E9BA728E834BB003AB97B /* NavBarController.swift in Sources */,
 				307FA473289FC374006A4615 /* AppDelegate.swift in Sources */,
 				30E800B128DA47F100E7343E /* TabBarController.swift in Sources */,
+				309E9BB328F01B63003AB97B /* UIView Ext.swift in Sources */,
 				309E9BAE28EA37CB003AB97B /* RootView.swift in Sources */,
 				309E9BA528E38458003AB97B /* WorldVC.swift in Sources */,
 				307FA48E28A0F68D006A4615 /* UIColor Ext.swift in Sources */,
