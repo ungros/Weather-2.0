@@ -7,7 +7,7 @@
 
 import UIKit
 
-
+extension UIView {
 
 func anchor(top: NSLayoutYAxisAnchor? = nil,
             left: NSLayoutXAxisAnchor? = nil,
@@ -44,5 +44,6 @@ func anchor(top: NSLayoutYAxisAnchor? = nil,
     
     if let height = height {
         heightAnchor.constraint(equalToConstant: height).isActive = true
+    }
     }
 }
