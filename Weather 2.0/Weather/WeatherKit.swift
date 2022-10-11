@@ -6,5 +6,10 @@
 //
 
 import UIKit
-import WebKit
 
+
+final class Weather {
+    let service = 0
+}
+
+    
