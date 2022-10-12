@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import WeatherKit
 
-
+@available(iOS 16.0, *)
 final class Weather {
-    let service = 0
+    let service = WeatherService()
 }
 
     

@@ -33,9 +33,9 @@ enum R {
         }
     }
     
-    enum Fonts {
-        static func helveticaRegularr(with size: CGFloat) -> UIFont {
-            UIFont(name: "Helvetica", size: size) ?? UIFont
-        }
+//    enum Fonts {
+//        static func helveticaRegularr(with size: CGFloat) -> UIFont {
+//            UIFont(name: "Helvetica", size: size) ?? UIFont
+//        }
     }
-}
+

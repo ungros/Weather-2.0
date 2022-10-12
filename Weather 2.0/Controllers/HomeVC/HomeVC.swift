@@ -1,6 +1,6 @@
 //
 //  HomeVC.swift
-//  Weather 2.0
+//Users/Roman/Documents/Weather 2.0/Weather 2.0.xcodeproj/  Weather 2.0
 //
 //  Created by Roman on 27.09.2022.
 //
@@ -9,8 +9,26 @@ import UIKit
 
 class HomeVC: RootViewController {
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+      
+//        configureNavBar()
     }
+    
+    
+//    func configureNavBar() {
+//        navigationController?.navigationBar.isHidden = true
+//    }
+    
 }
+

@@ -8,7 +8,7 @@
 import UIKit
 
 class NavBarController: UINavigationController {
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,22 +25,5 @@ class NavBarController: UINavigationController {
         
         navigationBar.addBottomBorder(with: .red, height: 1)
  }
-    
-    //let navVC = NavBarController(rootViewController: WorldVC())
-    
-    
-    
-    
-//    func setNavBars() {
-//    viewControllers = [setViewController(viewController: HomeVC(), title: "hi"),
-//                       setViewController(viewController: WorldVC(), title: "world")]
-//
-//    }
-//
-//    func setViewController(viewController: UIViewController, title: String) -> UIViewController {
-//
-//       // viewController.navigationItem.title = title
-//        viewController.navigationController?.title = title
-//        return(viewController)
-//    }
+      
 }
