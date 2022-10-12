@@ -14,6 +14,8 @@ enum R {
         static let navigators = UIColor.white
         static let colorAccent = UIColor(hexString: "#020B11")
         static let separator = UIColor(hexString: "#E8ECEF")
+        
+        static let rootView = UIColor(hexString: "484F53")
       
     }
     enum Strings {
