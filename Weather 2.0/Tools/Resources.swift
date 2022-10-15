@@ -16,7 +16,7 @@ enum R {
         static let separator = UIColor(hexString: "#E8ECEF")
         
         static let rootView = UIColor(hexString: "484F53")
-      
+        
     }
     enum Strings {
         enum TabBar {
@@ -35,9 +35,9 @@ enum R {
         }
     }
     
-//    enum Fonts {
-//        static func helveticaRegularr(with size: CGFloat) -> UIFont {
-//            UIFont(name: "Helvetica", size: size) ?? UIFont
-//        }
+    enum Fonts {
+        static func helveticaRegularr(with size: CGFloat) -> UIFont {
+            UIFont(name: "Helvetica", size: size) ?? UIFont()
+        }
     }
-
+}
