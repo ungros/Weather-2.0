@@ -7,4 +7,14 @@
 
 import UIKit
 
+class RootView: UIView {
+    
+}
 
+@objc extension RootView {
+    func setupViews() {}
+    func constraintViews() {}
+    func configureAppearence() {
+        backgroundColor = R.Colors.rootView
+    }
+}
