@@ -12,6 +12,10 @@ import WeatherKit
 final class Weather {
     let service = WeatherService()
     
+    
+    func getUserLocation() {
+        
+    }
 }
 
     
