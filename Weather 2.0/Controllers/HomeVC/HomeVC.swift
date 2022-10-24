@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import CoreLocation
 
-class HomeVC: RootViewController {
+@available(iOS 16.0, *)
+class HomeVC: Weather {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -23,6 +25,8 @@ class HomeVC: RootViewController {
         super.viewDidLoad()
       
 //        configureNavBar()
+        getUserLocation()
+        getWeather(location: CLLocation(latitude: 0.5765, longitude: 4324))
     }
     
     

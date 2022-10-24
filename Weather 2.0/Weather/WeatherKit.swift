@@ -11,7 +11,7 @@ import WeatherKit
 
 
 @available(iOS 16.0, *)
-open class Weather: UIViewController, CLLocationManagerDelegate {
+class Weather: RootViewController, CLLocationManagerDelegate {
    
     let locationManager = CLLocationManager()
     let service = WeatherService()
@@ -27,6 +27,9 @@ open class Weather: UIViewController, CLLocationManagerDelegate {
         Task {
             do {
                 let result = try await service.weather(for: location)
+                print("Current: "+String(describing: result.currentWeather))
+                print("Daily: "+String(describing: result.dailyForecast))
+                print("Minute: "+String(describing: result.minuteForecast))
             } catch {
                 print(String(describing: error))
             }

@@ -26,10 +26,15 @@ final class TabBarController: UITabBarController {
     }
     
     private func setTabBar(){
-        viewControllers = [
-                           setViewController(viewController: WorldVC(), title: R.Strings.TabBar.world, image: R.Images.TabBar.world),
-                           setViewController(viewController: HomeVC(), title: R.Strings.TabBar.home , image: R.Images.TabBar.home),
-                           setViewController(viewController: SearchVC(), title: R.Strings.TabBar.search, image: R.Images.TabBar.search)]
+        if #available(iOS 16.0, *) {
+            viewControllers = [
+                setViewController(viewController: WorldVC(), title: R.Strings.TabBar.world, image: R.Images.TabBar.world),
+                setViewController(viewController: HomeVC(), title: R.Strings.TabBar.home , image: R.Images.TabBar.home),
+                setViewController(viewController: SearchVC(), title: R.Strings.TabBar.search, image: R.Images.TabBar.search)]
+        } else {
+            // Fallback on earlier versions
+            return
+        }
     }
     
     
