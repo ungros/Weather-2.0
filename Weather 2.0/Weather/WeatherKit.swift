@@ -32,6 +32,14 @@ open class Weather: UIViewController, CLLocationManagerDelegate {
             }
         }
     }
+    
+    public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.first else {
+            return
+        }
+        locationManager.stopUpdatingLocation()
+        getWeather(location: location)
+    }
 }
 
     
