@@ -17,6 +17,8 @@ enum R {
         
         static let rootView = UIColor(hexString: "484F53")
         
+        static let cardColor = UIColor(hexString: "3FAEFF")
+        
     }
     enum Strings {
         enum TabBar {

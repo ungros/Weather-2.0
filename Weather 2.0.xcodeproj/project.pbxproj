@@ -23,7 +23,7 @@
 		309E9BB128EC334D003AB97B /* WeatherKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E9BB028EC334D003AB97B /* WeatherKit.swift */; };
 		309E9BB328F01B63003AB97B /* UIView Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E9BB228F01B63003AB97B /* UIView Ext.swift */; };
 		30A53BE9290AAC4E00714A1A /* RootBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A53BE8290AAC4E00714A1A /* RootBlurView.swift */; };
-		30A53BF9291FBAE200714A1A /* DilyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A53BF8291FBAE200714A1A /* DilyCard.swift */; };
+		30A53BF9291FBAE200714A1A /* DailyWeatherChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A53BF8291FBAE200714A1A /* DailyWeatherChart.swift */; };
 		30E800B128DA47F100E7343E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E800B028DA47F100E7343E /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +46,7 @@
 		309E9BB028EC334D003AB97B /* WeatherKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherKit.swift; sourceTree = "<group>"; };
 		309E9BB228F01B63003AB97B /* UIView Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView Ext.swift"; sourceTree = "<group>"; };
 		30A53BE8290AAC4E00714A1A /* RootBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBlurView.swift; sourceTree = "<group>"; };
-		30A53BF8291FBAE200714A1A /* DilyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DilyCard.swift; sourceTree = "<group>"; };
+		30A53BF8291FBAE200714A1A /* DailyWeatherChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherChart.swift; sourceTree = "<group>"; };
 		30E800B028DA47F100E7343E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				309E9BA128E38056003AB97B /* HomeVC.swift */,
-				30A53BF7291FBAB700714A1A /* WeatherCard */,
+				30A53BF7291FBAB700714A1A /* WeatherChart */,
 			);
 			path = HomeVC;
 			sourceTree = "<group>";
@@ -183,12 +183,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		30A53BF7291FBAB700714A1A /* WeatherCard */ = {
+		30A53BF7291FBAB700714A1A /* WeatherChart */ = {
 			isa = PBXGroup;
 			children = (
-				30A53BF8291FBAE200714A1A /* DilyCard.swift */,
+				30A53BF8291FBAE200714A1A /* DailyWeatherChart.swift */,
 			);
-			path = WeatherCard;
+			path = WeatherChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +266,7 @@
 				307FA48C28A0F005006A4615 /* Resources.swift in Sources */,
 				309E9BA228E38056003AB97B /* HomeVC.swift in Sources */,
 				309E9BAC28E9FD5C003AB97B /* BorderView Ext.swift in Sources */,
-				30A53BF9291FBAE200714A1A /* DilyCard.swift in Sources */,
+				30A53BF9291FBAE200714A1A /* DailyWeatherChart.swift in Sources */,
 				309E9BB128EC334D003AB97B /* WeatherKit.swift in Sources */,
 				309E9BAA28E86448003AB97B /* RootViewController.swift in Sources */,
 				309E9BA728E834BB003AB97B /* NavBarController.swift in Sources */,
