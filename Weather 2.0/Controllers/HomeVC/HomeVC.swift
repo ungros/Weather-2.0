@@ -11,6 +11,8 @@ import CoreLocation
 @available(iOS 16.0, *)
 class HomeVC: Weather {
     
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)

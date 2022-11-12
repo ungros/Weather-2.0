@@ -22,6 +22,8 @@
 		309E9BAE28EA37CB003AB97B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E9BAD28EA37CB003AB97B /* RootView.swift */; };
 		309E9BB128EC334D003AB97B /* WeatherKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E9BB028EC334D003AB97B /* WeatherKit.swift */; };
 		309E9BB328F01B63003AB97B /* UIView Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E9BB228F01B63003AB97B /* UIView Ext.swift */; };
+		30A53BE9290AAC4E00714A1A /* RootBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A53BE8290AAC4E00714A1A /* RootBlurView.swift */; };
+		30A53BF9291FBAE200714A1A /* DilyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A53BF8291FBAE200714A1A /* DilyCard.swift */; };
 		30E800B128DA47F100E7343E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E800B028DA47F100E7343E /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		309E9BAD28EA37CB003AB97B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		309E9BB028EC334D003AB97B /* WeatherKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherKit.swift; sourceTree = "<group>"; };
 		309E9BB228F01B63003AB97B /* UIView Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView Ext.swift"; sourceTree = "<group>"; };
+		30A53BE8290AAC4E00714A1A /* RootBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBlurView.swift; sourceTree = "<group>"; };
+		30A53BF8291FBAE200714A1A /* DilyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DilyCard.swift; sourceTree = "<group>"; };
 		30E800B028DA47F100E7343E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,9 +80,11 @@
 		307FA471289FC374006A4615 /* Weather 2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				309E9BAF28EC3330003AB97B /* Weather */,
+				307FA48728A0E88E006A4615 /* Root Code */,
 				307FA48928A0E8DA006A4615 /* Controllers */,
+				309E9BAF28EC3330003AB97B /* Weather */,
 				309E9BA828E834CE003AB97B /* Navigation */,
+				30A53BF6291FB94400714A1A /* Resources */,
 				307FA48628A0E87B006A4615 /* Tools */,
 				307FA48A28A0E8E4006A4615 /* Application */,
 			);
@@ -88,7 +94,6 @@
 		307FA48628A0E87B006A4615 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				307FA48B28A0F005006A4615 /* Resources.swift */,
 				307FA48D28A0F68D006A4615 /* UIColor Ext.swift */,
 				309E9BB228F01B63003AB97B /* UIView Ext.swift */,
 				309E9BAB28E9FD5C003AB97B /* BorderView Ext.swift */,
@@ -101,6 +106,7 @@
 			children = (
 				309E9BA928E86448003AB97B /* RootViewController.swift */,
 				309E9BAD28EA37CB003AB97B /* RootView.swift */,
+				30A53BE8290AAC4E00714A1A /* RootBlurView.swift */,
 			);
 			path = "Root Code";
 			sourceTree = "<group>";
@@ -111,7 +117,6 @@
 				309E9B9D28E236E3003AB97B /* HomeVC */,
 				309E9B9E28E236ED003AB97B /* SearchVC */,
 				309E9BA328E3842F003AB97B /* WorldVC */,
-				307FA48728A0E88E006A4615 /* Root Code */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -121,7 +126,6 @@
 			children = (
 				307FA480289FC376006A4615 /* Info.plist */,
 				307FA47D289FC376006A4615 /* LaunchScreen.storyboard */,
-				307FA47B289FC376006A4615 /* Assets.xcassets */,
 				307FA472289FC374006A4615 /* AppDelegate.swift */,
 				307FA474289FC374006A4615 /* SceneDelegate.swift */,
 			);
@@ -132,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				309E9BA128E38056003AB97B /* HomeVC.swift */,
+				30A53BF7291FBAB700714A1A /* WeatherCard */,
 			);
 			path = HomeVC;
 			sourceTree = "<group>";
@@ -167,6 +172,23 @@
 				309E9BB028EC334D003AB97B /* WeatherKit.swift */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		30A53BF6291FB94400714A1A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				307FA48B28A0F005006A4615 /* Resources.swift */,
+				307FA47B289FC376006A4615 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		30A53BF7291FBAB700714A1A /* WeatherCard */ = {
+			isa = PBXGroup;
+			children = (
+				30A53BF8291FBAE200714A1A /* DilyCard.swift */,
+			);
+			path = WeatherCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,10 +261,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30A53BE9290AAC4E00714A1A /* RootBlurView.swift in Sources */,
 				309E9BA028E38018003AB97B /* SearchVC.swift in Sources */,
 				307FA48C28A0F005006A4615 /* Resources.swift in Sources */,
 				309E9BA228E38056003AB97B /* HomeVC.swift in Sources */,
 				309E9BAC28E9FD5C003AB97B /* BorderView Ext.swift in Sources */,
+				30A53BF9291FBAE200714A1A /* DilyCard.swift in Sources */,
 				309E9BB128EC334D003AB97B /* WeatherKit.swift in Sources */,
 				309E9BAA28E86448003AB97B /* RootViewController.swift in Sources */,
 				309E9BA728E834BB003AB97B /* NavBarController.swift in Sources */,
