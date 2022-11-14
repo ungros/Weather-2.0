@@ -1,19 +1,14 @@
 //
-//  DilyCard.swift
+//  WeatherHourCell.swift
 //  Weather 2.0
 //
-//  Created by Roman on 12.11.2022.
+//  Created by Roman on 14.11.2022.
 //
 
 import UIKit
 
-final class DWeatherChart: RootView {
+final class WeatherHourCell: UICollectionViewCell {
     
-    private let hours = UICollectionView()
-    private var cell = UICollectionViewCell()
-}
-
-extension DWeatherChart {
     
     override func setupViews() {
         super.setupViews()
@@ -30,5 +25,4 @@ extension DWeatherChart {
         
     }
 }
-
 
