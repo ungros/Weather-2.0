@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		301F909D292E658500AE81CE /* DailyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301F909C292E658500AE81CE /* DailyWeather.swift */; };
 		307FA473289FC374006A4615 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307FA472289FC374006A4615 /* AppDelegate.swift */; };
 		307FA475289FC374006A4615 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307FA474289FC374006A4615 /* SceneDelegate.swift */; };
 		307FA47C289FC376006A4615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307FA47B289FC376006A4615 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		301F909C292E658500AE81CE /* DailyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeather.swift; sourceTree = "<group>"; };
 		307FA46F289FC374006A4615 /* Weather 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		307FA472289FC374006A4615 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		307FA474289FC374006A4615 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 		30A53BF7291FBAB700714A1A /* WeatherChart */ = {
 			isa = PBXGroup;
 			children = (
+				301F909C292E658500AE81CE /* DailyWeather.swift */,
 			);
 			path = WeatherChart;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				30A53BE9290AAC4E00714A1A /* RootBlurView.swift in Sources */,
 				309E9BA028E38018003AB97B /* SearchVC.swift in Sources */,
+				301F909D292E658500AE81CE /* DailyWeather.swift in Sources */,
 				30A53BFD2922914700714A1A /* RootCollectionView.swift in Sources */,
 				307FA48C28A0F005006A4615 /* Resources.swift in Sources */,
 				309E9BA228E38056003AB97B /* HomeVC.swift in Sources */,
