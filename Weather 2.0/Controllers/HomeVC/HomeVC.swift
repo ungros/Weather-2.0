@@ -38,3 +38,31 @@ class HomeVC: Weather {
     
 }
 
+
+@available(iOS 16.0, *)
+extension HomeVC: UICollectionViewDelegate {
+    private func collectionView(_ collectionView: RootCollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        
+        print("SSs")
+    }
+}
+
+
+@available(iOS 16.0, *)
+extension HomeVC: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        12
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        12
+    }
+}
+
+@available(iOS 16.0, *)
+extension HomeVC: UICollectionViewDelegateFlowLayout { }

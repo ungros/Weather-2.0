@@ -8,17 +8,8 @@
 import UIKit
 import SwiftUI
 
-final class HoursCollection: RootCollectionView, UICollectionViewDelegate, UICollectionViewDataSource {
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
-    }
-    
-    
+final class HoursCollection: RootCollectionView {
+ 
     let collectionView: UICollectionView = {
         let collectionView = UICollectionView()
         collectionView.backgroundColor = .red
@@ -32,6 +23,7 @@ extension HoursCollection {
     override func constraintViews() {}
     override func configureAppearence() {
     
+        
     }
 }
 

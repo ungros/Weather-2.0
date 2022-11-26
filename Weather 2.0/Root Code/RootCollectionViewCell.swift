@@ -16,5 +16,7 @@ final class RootCollectionViewCell: UICollectionViewCell {
     func constraintViews() {}
     func configureAppearence() {
         
+        
+    RootCollectionVie
     }
 }
