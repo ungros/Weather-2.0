@@ -8,7 +8,16 @@
 import UIKit
 import SwiftUI
 
-final class HoursCollection: RootCollectionView {
+final class HoursCollection: RootCollectionView, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
+    
     
     let collectionView: UICollectionView = {
         let collectionView = UICollectionView()
