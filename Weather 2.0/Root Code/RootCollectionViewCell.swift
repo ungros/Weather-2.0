@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class RootCollectionViewCell: UICollectionViewCell {
+class RootCollectionViewCell: UICollectionViewCell {
     
 }
 
@@ -16,7 +16,5 @@ final class RootCollectionViewCell: UICollectionViewCell {
     func constraintViews() {}
     func configureAppearence() {
         
-        
-    RootCollectionVie
     }
 }
