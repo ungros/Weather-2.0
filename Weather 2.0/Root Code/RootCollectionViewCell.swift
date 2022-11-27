@@ -9,6 +9,7 @@ import UIKit
 
 class RootCollectionViewCell: UICollectionViewCell {
     
+    
 }
 
 @objc extension RootCollectionViewCell {

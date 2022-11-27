@@ -9,6 +9,17 @@ import UIKit
 
 final class HourCollectionViewCell: RootCollectionViewCell {
     
+    let hourCell: RootCollectionViewCell = {
+       let hourCell = RootCollectionViewCell()
+        
+        hourCell.backgroundColor = .green
+        hourCell.bounds = .zero
+        hourCell.layer.cornerRadius = 20
+        
+        return hourCell
+    }()
+    
+    
 }
 
 @objc extension HourCollectionViewCell {
