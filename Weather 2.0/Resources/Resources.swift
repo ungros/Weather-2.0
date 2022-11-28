@@ -35,6 +35,17 @@ enum R {
             static let search = UIImage(named: "SearchBar")
             static let world = UIImage(named: "WorldBar")
         }
+        
+        enum WeatherIcons {
+            static let cloudy = UIImage(systemName: "cloud.fill")
+            static let rain = UIImage(systemName: "cloud.rain")
+            
+            
+            
+            
+            
+            
+        }
     }
     
     enum Fonts {

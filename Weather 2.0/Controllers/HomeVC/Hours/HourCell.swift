@@ -10,7 +10,8 @@ import UIKit
 final class HourCollectionViewCell: RootCollectionViewCell {
     
     let hourCell: RootCollectionViewCell = {
-       let hourCell = RootCollectionViewCell()
+        
+        let hourCell = RootCollectionViewCell()
         
         hourCell.backgroundColor = .green
         hourCell.bounds = .zero

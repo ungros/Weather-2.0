@@ -46,4 +46,11 @@ func anchor(top: NSLayoutYAxisAnchor? = nil,
         heightAnchor.constraint(equalToConstant: height).isActive = true
     }
     }
+    
+    func setupView(_ view: UIView) {
+        addSubview(view)
+        view.translatesAutoresizingMaskIntoConstraints = false
+    }
 }
+
+
