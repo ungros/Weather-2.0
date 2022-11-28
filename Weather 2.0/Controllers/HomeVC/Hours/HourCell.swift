@@ -7,9 +7,12 @@
 
 import UIKit
 
-final class HourCollectionViewCell: RootCollectionViewCell {
+ class HourCollectionViewCell: RootCollectionViewCell {
     
-    let hourCell: RootCollectionViewCell = {
+     static let reuseId = "HourCollectionViewCell"
+    
+     let hourCell: RootCollectionViewCell = {
+        
         
         let hourCell = RootCollectionViewCell()
         
