@@ -10,9 +10,13 @@ import UIKit
  class HourCollectionViewCell: RootCollectionViewCell {
     
      static let reuseId = "HourCollectionViewCell"
-    
+     
+     
+     
+     
      let hourCell: RootCollectionViewCell = {
         
+         
         
         let hourCell = RootCollectionViewCell()
         
