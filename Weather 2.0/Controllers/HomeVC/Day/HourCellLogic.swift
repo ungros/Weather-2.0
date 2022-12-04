@@ -11,23 +11,23 @@ import UIKit
     
      static let reuseId = "HourCollectionViewCell"
      
-     
-     
-     
-     let hourCell: RootCollectionViewCell = {
-        
+     let cellView: UIView = {
+         let view = UIView()
+         view.backgroundColor = .red
          
-        
-        let hourCell = RootCollectionViewCell()
-        
-        hourCell.backgroundColor = .green
-        hourCell.bounds = .zero
-        hourCell.layer.cornerRadius = 20
-        
-        return hourCell
-    }()
-    
-    
+         return view
+     }()
+  
+     override init(frame: CGRect) {
+         super.init(frame: frame)
+         
+         addSubview(cellView)
+     }
+     
+     required init?(coder: NSCoder) {
+         fatalError("init(coder:) has not been implemented")
+     }
+     
 }
 
 @objc extension HourCollectionViewCell {

@@ -12,27 +12,36 @@ import SwiftUI
 struct HourWeatherCell: View {
     
     var body: some View {
-        HStack(alignment: .center) {
+        VStack(alignment: .center) {
+            
             VStack{
-                
                 Text("00")
+                //.font(.caption)
+                //.padding()
                 Image(uiImage: R.Images.WeatherIcons.cloudy!)
-                Text("42C")
-                .padding(10)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 29, height:  29)
+                   // .padding()
+                   // .backgroundColor(.white)
+                Text("54")
+                //.font(.caption)
+                //.padding()
+                
                 
             }
-            
         }
-        .padding()
-        .background(Color(R.Colors.cardColor))
-        .cornerRadius(20)
-        .fr
+            .padding(30)
+            .background(Color(R.Colors.cardColor))
+            .cornerRadius(20)
+            .frame(width: 340, height: 200)
     }
-}
-
-struct Preview: PreviewProvider {
-    static var previews: some View {
-        HourWeatherCell()
-            .previewLayout(.sizeThatFits)
+    
+    
+    struct Preview: PreviewProvider {
+        static var previews: some View {
+            HourWeatherCell()
+                .previewLayout(.sizeThatFits)
+        }
     }
 }
