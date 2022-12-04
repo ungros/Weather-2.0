@@ -22,6 +22,7 @@ import UIKit
          super.init(frame: frame)
          
          addSubview(cellView)
+         constraintViews()
      }
      
      required init?(coder: NSCoder) {
@@ -32,7 +33,14 @@ import UIKit
 
 @objc extension HourCollectionViewCell {
     override func setupViews() {}
-    override func constraintViews() {}
+    override func constraintViews() {
+        NSLayoutConstraint.activate([
+            cellView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            cellView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            cellView.topAnchor.constraint(equalTo: topAnchor),
+            cellView.bottomAnchor.constraint(equalTo: bottomAnchor)
+        ])
+    }
     override func configureAppearence() {
         
     }
