@@ -11,7 +11,7 @@ import CoreLocation
 @available(iOS 16.0, *)
 class HomeVC: Weather {
     
-   
+   private let hoursCollection = HoursCollection()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -29,9 +29,16 @@ class HomeVC: Weather {
 
         getUserLocation()
         getWeather(location: CLLocation(latitude: 0.5765, longitude: 4324))
+        view.setupView(hoursCollection)
+        
     }
     
-    
+    override func constraintViews() {
+        NSLayoutConstraint.activate([
+        
+        
+        ])
+    }
 
 }
 
