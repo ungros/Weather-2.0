@@ -8,7 +8,7 @@
 import UIKit
 import SwiftUI
 
-class HoursCollection: RootCollectionView, UICollectionViewDataSource, UICollectionViewDelegate {
+class HoursCollection: RootCollectionView, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
     let cells = [WeatherModel]()
     
@@ -29,13 +29,18 @@ class HoursCollection: RootCollectionView, UICollectionViewDataSource, UICollect
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cells.count
+        return 5 //cells.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = dequeueReusableCell(withReuseIdentifier: HourCollectionViewCell.reuseId, for: indexPath)
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 40, height: 40)
+    }
+  
 
 }
 

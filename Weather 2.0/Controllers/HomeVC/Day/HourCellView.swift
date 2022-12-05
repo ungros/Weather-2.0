@@ -34,7 +34,7 @@ struct HourWeatherCell: View {
             .padding(30)
             .background(Color(R.Colors.cardColor))
             .cornerRadius(20)
-            .frame(width: 340, height: 200)
+            .frame(width: 90, height: 50)
     }
     
     
