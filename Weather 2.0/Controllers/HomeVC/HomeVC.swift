@@ -51,7 +51,7 @@ class HomeVC: Weather {
             hoursCollection.topAnchor.constraint(equalTo: view.topAnchor, constant: 350),
             hoursCollection.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             hoursCollection.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            hoursCollection.heightAnchor.constraint(equalToConstant: 150),
+            hoursCollection.heightAnchor.constraint(equalToConstant: 200),
           
         ])
     }

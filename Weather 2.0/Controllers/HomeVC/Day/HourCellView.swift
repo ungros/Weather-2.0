@@ -15,18 +15,16 @@ struct HourWeatherCell: View {
         VStack(alignment: .center) {
             
             VStack{
-                Text("00")
-                //.font(.caption)
+                Text("5")
+                    .font(.body)
                 //.padding()
                 Image(uiImage: R.Images.WeatherIcons.cloudy!)
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 29, height:  29)
-                   // .padding()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 55, height:  100)
+                    .padding()
                    // .backgroundColor(.white)
-                Text("54")
-                //.font(.caption)
-                //.padding()
+                Text("45")
                 
                 
             }
