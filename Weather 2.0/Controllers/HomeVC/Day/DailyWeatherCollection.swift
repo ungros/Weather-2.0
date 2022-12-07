@@ -34,6 +34,13 @@ class HoursCollection: RootCollectionView, UICollectionViewDataSource, UICollect
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = dequeueReusableCell(withReuseIdentifier: HourCollectionViewCell.reuseId, for: indexPath)
+        if #available(iOS 16.0, *) {
+            cell.contentConfiguration = UIHostingConfiguration {
+                HourWeatherCell()
+            }
+        } else {
+            // Fallback on earlier versions
+        }
         return cell
     }
     

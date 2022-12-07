@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 import CoreLocation
 
 @available(iOS 16.0, *)
@@ -17,7 +18,7 @@ class HomeVC: Weather {
         return view
     }()
     
-     let cellView = cellView
+    let hourVeatherCell = UIHostingController(rootView: HourWeatherCell())
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -38,7 +39,8 @@ class HomeVC: Weather {
         getWeather(location: CLLocation(latitude: 0.5765, longitude: 4324))
         
         view.setupView(hoursCollection)
-        hoursCollection.setupViews(cellView)
+        
+        
         constraintViews()
         
     }
