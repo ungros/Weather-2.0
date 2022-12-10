@@ -16,10 +16,11 @@ class HoursCollection: RootCollectionView, UICollectionViewDataSource, UICollect
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
+        layout.minimumInteritemSpacing = 0.3
+        
         super.init(frame: .zero, collectionViewLayout: layout)
         
         backgroundColor = .green
-        
         delegate = self
         dataSource = self
         register(HourCollectionViewCell.self, forCellWithReuseIdentifier: HourCollectionViewCell.reuseId)

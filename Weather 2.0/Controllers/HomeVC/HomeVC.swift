@@ -14,7 +14,9 @@ class HomeVC: Weather {
     
     private let hoursCollection: HoursCollection = {
         let view = HoursCollection()
-        view.backgroundColor = .yellow
+        
+        //view.backgroundColor = .white
+        
         return view
     }()
     
