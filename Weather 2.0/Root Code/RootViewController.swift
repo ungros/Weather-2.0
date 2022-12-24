@@ -13,18 +13,14 @@ class RootViewController: UIViewController {
         super.viewDidLoad()
         
         configureAppearence()
-    
+        
     }
-   
-   
 }
 
-    @objc extension RootViewController {
-        func setupViews() {}
-        func constraintViews() {}
-        func configureAppearence() {
-            view.backgroundColor = R.Colors.background
-        }
+@objc extension RootViewController {
+    func setupViews() {}
+    func constraintViews() {}
+    func configureAppearence() {
+        view.backgroundColor = R.Colors.background
     }
-
-    
+}

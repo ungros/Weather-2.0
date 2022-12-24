@@ -5,7 +5,6 @@
 //  Created by Roman on 29.11.2022.
 //
 
-
 import Foundation
 import SwiftUI
 
@@ -23,18 +22,18 @@ struct HourWeatherCell: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 30, height:  30)
-                    //.padding()
-                   // .backgroundColor(.white)
+                //.padding()
+                // .backgroundColor(.white)
                 Text("45")
                     .fixedSize()
                 
             }
         }
-            .frame(width: 40, height: 80)
-            .padding(20)
-            .background(Color(R.Colors.separator))
-            .cornerRadius(20)
-            
+        .frame(width: 40, height: 80)
+        .padding(8)
+        .background(Color(R.Colors.separator))
+        .cornerRadius(20)
+        
     }
     
     
