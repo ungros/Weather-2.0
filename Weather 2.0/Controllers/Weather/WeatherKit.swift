@@ -9,38 +9,38 @@ import CoreLocation
 import UIKit
 import WeatherKit
 
-
 @available(iOS 16.0, *)
-class Weather: RootViewController, CLLocationManagerDelegate {
     
-    let service = WeatherService()
-    let locationManager = CLLocationManager()
-    
-    func getUserLocation() {
-        locationManager.stopUpdatingLocation()
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
-    }
-    
-    func getWeather(location: CLLocation) {
-        Task {
-            do {
-                let result = try await service.weather(for: location)
-                print("Current: "+String(describing: result.currentWeather))
-                print("Daily: "+String(describing: result.dailyForecast))
-                print("Minute: "+String(describing: result.minuteForecast))
-            } catch {
-                print(String(describing: error))
+    class Weather: RootViewController, CLLocationManagerDelegate {
+        
+        let service = WeatherService()
+        var locationManager = CLLocationManager()
+        
+        func getUserLocation() {
+            locationManager.startUpdatingLocation()
+            locationManager.delegate = self
+            locationManager.requestWhenInUseAuthorization()
+        }
+        
+        func getWeather(location: CLLocation) {
+            Task {
+                do {
+                    let result = try await service.weather(for: location)
+                    print("Current: "+String(describing: result.currentWeather))
+                    print("Daily: "+String(describing: result.dailyForecast))
+                    print("Minute: "+String(describing: result.minuteForecast))
+                } catch {
+                    print(String(describing: error))
+                }
             }
         }
-    }
-    
-    public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let location = locations.first else {
-            return
+        
+        public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+            guard let location = locations.first else {
+                return
+            }
+            locationManager.stopUpdatingLocation()
+            getWeather(location: location)
         }
-        locationManager.stopUpdatingLocation()
-        getWeather(location: location)
     }
-}
 

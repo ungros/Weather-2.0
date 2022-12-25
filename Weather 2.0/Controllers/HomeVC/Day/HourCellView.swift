@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import WeatherKit
 
 struct HourWeatherCell: View {
     
@@ -14,7 +15,7 @@ struct HourWeatherCell: View {
         VStack(alignment: .center) {
             
             VStack{
-                Text("5")
+                Text("4")
                     .font(.body)
                     .fixedSize()
                 //.padding()

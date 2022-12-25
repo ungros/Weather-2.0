@@ -55,8 +55,7 @@ class HoursCollection: RootCollectionView, UICollectionViewDataSource, UICollect
 extension HoursCollection {
     
     override func setupViews() {}
-    override func constraintViews() {
-    }
+    override func constraintViews() {}
     override func configureAppearence() {
     
         

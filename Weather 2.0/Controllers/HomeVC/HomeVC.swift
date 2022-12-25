@@ -10,7 +10,7 @@ import SwiftUI
 import CoreLocation
 
 @available(iOS 16.0, *)
-class HomeVC: Weather {
+final class HomeVC: Weather {
     
     private let hoursCollection: HoursCollection = {
         let view = HoursCollection()
