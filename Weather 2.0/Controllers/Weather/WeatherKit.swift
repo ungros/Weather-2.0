@@ -12,10 +12,9 @@ import WeatherKit
 
 @available(iOS 16.0, *)
 class Weather: RootViewController, CLLocationManagerDelegate {
-   
-    let locationManager = CLLocationManager()
-    let service = WeatherService()
     
+    let service = WeatherService()
+    let locationManager = CLLocationManager()
     
     func getUserLocation() {
         locationManager.stopUpdatingLocation()
@@ -45,4 +44,3 @@ class Weather: RootViewController, CLLocationManagerDelegate {
     }
 }
 
-    

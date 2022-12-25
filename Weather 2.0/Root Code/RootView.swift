@@ -15,7 +15,7 @@ class RootView: UIView {
         setupViews()
         constraintViews()
         configureAppearence()
-	
+        
     }
     
     required init?(coder: NSCoder) {
@@ -27,7 +27,7 @@ class RootView: UIView {
     func setupViews() {}
     func constraintViews() {}
     func configureAppearence() {
-   
+        
         backgroundColor = R.Colors.rootView
     }
 }

@@ -22,7 +22,7 @@ final class TabBarController: UITabBarController {
         
         setTabBar()
         setupTabBar()
-    
+        
     }
     
     private func setTabBar(){

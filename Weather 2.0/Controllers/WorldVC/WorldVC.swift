@@ -9,11 +9,8 @@ import UIKit
 
 class WorldVC: RootViewController {
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-    
+        
     }
 }

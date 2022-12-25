@@ -35,8 +35,8 @@ class HomeVC: Weather {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-
+        
+        
         getUserLocation()
         getWeather(location: CLLocation(latitude: 0.5765, longitude: 4324))
         
@@ -49,14 +49,12 @@ class HomeVC: Weather {
     
     override func constraintViews() {
         NSLayoutConstraint.activate([
-
+            
             hoursCollection.topAnchor.constraint(equalTo: view.topAnchor, constant: 350),
             hoursCollection.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             hoursCollection.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             hoursCollection.heightAnchor.constraint(equalToConstant: 200),
-          
         ])
     }
-
+    
 }
-

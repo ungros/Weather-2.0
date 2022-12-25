@@ -12,8 +12,8 @@ struct WeatherModel {
     var place: String
     var temperature: String
     var description: String
-//    var max: [UIImage : String]
-//    var min: [UIImage : String]
+    //    var max: [UIImage : String]
+    //    var min: [UIImage : String]
     static func combineWeather() -> [WeatherModel] {
         
         let cloudy = WeatherModel(weatherIcon: R.Images.WeatherIcons.cloudy!,
@@ -22,13 +22,13 @@ struct WeatherModel {
                                   description: "Little cloudy")
         
         let rain = WeatherModel(weatherIcon: UIImage(systemName: "wind")!,
-                                                            place: "Gamburg",
-                                                            temperature: "15",
-                                                            description: "Little raini")
+                                place: "Gamburg",
+                                temperature: "15",
+                                description: "Little raini")
         let wind = WeatherModel(weatherIcon: UIImage(systemName: "rain")!,
-                                                            place: "Duseldorf",
-                                                            temperature: "18",
-                                                            description: "Little windi")
+                                place: "Duseldorf",
+                                temperature: "18",
+                                description: "Little windi")
         
         return [cloudy, rain]
     }
