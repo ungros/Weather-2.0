@@ -27,6 +27,8 @@ final class TabBarController: UITabBarController {
     
     private func setTabBar(){
         if #available(iOS 16.0, *) {
+            
+            
             viewControllers = [
                 setViewController(viewController: WorldVC(), title: R.Strings.TabBar.world, image: R.Images.TabBar.world),
                 setViewController(viewController: HomeVC(), title: R.Strings.TabBar.home , image: R.Images.TabBar.home),

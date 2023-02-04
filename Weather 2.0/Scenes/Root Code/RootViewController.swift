@@ -24,3 +24,4 @@ class RootViewController: UIViewController {
         view.backgroundColor = R.Colors.background
     }
 }
+ 
